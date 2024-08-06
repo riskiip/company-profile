@@ -1,0 +1,30 @@
+.nav- {
+  &container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &logo {
+    img {
+      width: 120px;
+      height: 120px;
+      cursor: pointer;
+    }
+  }
+
+  &grid-item {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &item:hover {
+    border-radius: 12px;
+    padding: 4px;
+    border: 1px solid var(--color-primary);
+    color: var(--color-text);
+  }
+}
