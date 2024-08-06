@@ -20,11 +20,4 @@
     justify-content: center;
     cursor: pointer;
   }
-
-  &item:hover {
-    border-radius: 12px;
-    padding: 4px;
-    border: 1px solid var(--color-primary);
-    color: var(--color-text);
-  }
 }
