@@ -4,6 +4,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { AboutComponent } from './about/about.component';
+import { PartnersComponent } from './partners/partners.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +17,9 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     ProductComponent,
     AboutComponent,
+    PartnersComponent,
+    ContactComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
