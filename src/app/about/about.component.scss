@@ -3,12 +3,14 @@
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    gap: 60px;
   }
 
   &logo-section {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 50%;
 
     img {
       width: 300px;
@@ -19,7 +21,7 @@
   &text-section {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 50%;
   }
 
   &description {
@@ -28,7 +30,15 @@
   }
 }
 
-.vision-container,
-.mission-container {
-  margin-top: 50px;
+.vision-mission-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 60px;
+
+  .vision-container,
+  .mission-container {
+    width: 50%;
+    text-align: justify;
+  }
 }
