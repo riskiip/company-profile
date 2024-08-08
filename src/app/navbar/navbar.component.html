@@ -1,13 +1,13 @@
-<div class="nav-container">
+<div [ngClass]="navbarfixed ? 'nav-container-fixed' : 'nav-container'" class="">
   <div class="nav-logo">
-    <img src="../../assets/logo/edutop-logo.png" alt="edutop-navbar" />
+    <img src="../../assets/logo/edutop.png" alt="edutop-navbar" />
   </div>
 
   <div class="nav-grid-item">
-    <div class="nav-item">Home</div>
-    <div class="nav-item">Product</div>
-    <div class="nav-item">About</div>
-    <div class="nav-item">Partner</div>
-    <div class="nav-item">Contact Us</div>
+    <div class="nav-item" (click)="onNavClicked('home')">Home</div>
+    <div class="nav-item" (click)="onNavClicked('product')">Product</div>
+    <div class="nav-item" (click)="onNavClicked('about')">About</div>
+    <div class="nav-item" (click)="onNavClicked('partner')">Partner</div>
+    <div class="nav-item" (click)="onNavClicked('contact')">Contact Us</div>
   </div>
 </div>

@@ -1,26 +1,30 @@
 <img src="../assets/red-wave.svg" class="img-test" alt="" />
 
 <div class="navbar-section">
-  <app-navbar></app-navbar>
+  <app-navbar (navEmitter)="navHandling($event)"></app-navbar>
 </div>
 
-<div class="home-section">
+<div class="home-section" id="home">
   <app-home></app-home>
 </div>
 
-<div class="product-section">
+<div class="product-section" id="product">
   <app-product></app-product>
 </div>
 
-<div class="about-section">
+<div class="about-section" id="about">
   <app-about></app-about>
 </div>
 
-<div class="partners-section">
+<div class="partners-section" id="partner">
   <app-partners></app-partners>
 </div>
 
-<div class="contact-section">
+<div class="goverment-section" id="goverment">
+  <app-goverment></app-goverment>
+</div>
+
+<div class="contact-section" id="contact">
   <app-contact></app-contact>
 </div>
 

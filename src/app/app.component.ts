@@ -7,6 +7,8 @@ import { AboutComponent } from './about/about.component';
 import { PartnersComponent } from './partners/partners.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { GovermentComponent } from './goverment/goverment.component';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -20,8 +22,15 @@ import { FooterComponent } from './footer/footer.component';
     PartnersComponent,
     ContactComponent,
     FooterComponent,
+    GovermentComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {}
+export class AppComponent {
+  constructor(private viewPortScroller: ViewportScroller) {}
+
+  navHandling(anchor: string) {
+    this.viewPortScroller.scrollToAnchor(anchor);
+  }
+}
