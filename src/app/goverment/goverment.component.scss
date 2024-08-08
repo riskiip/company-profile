@@ -2,7 +2,19 @@
   margin-top: 100px;
   display: flex;
   justify-content: center;
-  gap: 60px;
+  align-items: center;
+  gap: 80px;
   background-color: var(--color-grey);
   padding: 100px 208px;
+
+  img.iso {
+    height: 180px;
+    width: 180px;
+  }
+
+  img.catalog,
+  img.tkdn {
+    width: 180px;
+    height: 120px;
+  }
 }

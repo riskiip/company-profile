@@ -2,9 +2,25 @@
   &container {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
-    background-color: var(--color-grey);
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(52, 63, 82, 1);
     padding: 100px 208px;
+    color: white;
+  }
+
+  &copyright {
+    text-align: center;
+    background-color: rgba(52, 63, 82, 1);
+    width: 100%;
+    color: white;
+  }
+
+  &socmed {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
   }
 
   &title {

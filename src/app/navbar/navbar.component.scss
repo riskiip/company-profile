@@ -35,5 +35,16 @@
     justify-content: center;
     cursor: pointer;
     font-size: 18px;
+    color: white;
+  }
+
+  &grid-item-fixed {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--color-text);
   }
 }

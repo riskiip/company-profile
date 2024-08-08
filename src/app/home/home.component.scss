@@ -25,13 +25,14 @@
     border-radius: 5px;
     color: white;
     background-color: var(--color-accent);
-    font-size: 24px;
+    font-size: 18px;
     width: fit-content;
-    padding: 20px;
+    padding: 12px;
     cursor: pointer;
   }
 }
 
 span.special-text {
   font-weight: 700;
+  color: var(--color-accent);
 }
