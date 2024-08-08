@@ -1,0 +1,19 @@
+.footer- {
+  &container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-grey);
+    padding: 100px 208px;
+  }
+
+  &title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 35px;
+  }
+
+  &item {
+    font-size: 16px;
+  }
+}

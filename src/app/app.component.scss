@@ -6,3 +6,11 @@
 .navbar-section {
   position: relative;
 }
+
+.navbar-section,
+.home-section,
+.product-section,
+.partners-section,
+.contact-section {
+  margin: 0 208px;
+}

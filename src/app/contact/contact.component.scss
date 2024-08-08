@@ -18,11 +18,31 @@
     img {
       width: 400px;
       height: 400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
     }
   }
 
   &email-section {
     width: 50%;
+  }
+
+  &button {
+    margin-top: 48px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--color-accent);
+    font-size: 18px;
+    width: fit-content;
+    padding: 12px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    text-align: center;
   }
 }
 
