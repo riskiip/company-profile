@@ -1,21 +1,47 @@
-<div class="home-container">
-  <div class="home-text-section">
-    <div class="home-title">
-      Your <span class="special-text">best solution</span> <br />
-      for
-      <span class="special-text">your project</span>
+<ng-container>
+  <div class="home-container web-view">
+    <div class="home-text-section">
+      <div class="home-title">
+        Your <span class="special-text">best solution</span> <br />
+        for
+        <span class="special-text">your project</span>
+      </div>
+
+      <div class="home-label">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua.
+      </div>
+
+      <div class="home-button" (click)="onAboutClick('about')">About Us</div>
     </div>
 
-    <div class="home-label">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua.
+    <div class="home-icon-section">
+      <img src="../../assets/hero/team-up.svg" alt="" />
+    </div>
+  </div>
+</ng-container>
+
+<ng-container>
+  <div class="home-container mobile-view">
+    <div class="home-text-section">
+      <div class="home-title">
+        Your <span class="special-text">best solution</span> <br />
+        for
+        <span class="special-text">your project</span>
+      </div>
+
+      <div class="home-label">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua.
+      </div>
+
+      <div class="home-button" (click)="onAboutClick('about')">About Us</div>
     </div>
 
-    <div class="home-button" (click)="onAboutClick('about')">About Us</div>
+    <div class="home-icon-section">
+      <img src="../../assets/hero/team-up.svg" alt="" />
+    </div>
   </div>
-
-  <div class="home-icon-section">
-    <img src="../../assets/hero/team-up.svg" alt="" />
-  </div>
-</div>
+</ng-container>

@@ -2,11 +2,12 @@
   &container {
     margin-top: 100px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: unset;
+    align-items: unset;
     background-color: rgba(52, 63, 82, 1);
-    padding: 100px 208px;
+    padding: unset;
     color: white;
+    flex-direction: column;
   }
 
   &copyright {
@@ -18,9 +19,10 @@
 
   &socmed {
     display: flex;
-    justify-content: center;
+    justify-content: unset;
     gap: 12px;
     cursor: pointer;
+    padding-left: 24px;
   }
 
   &title {
@@ -37,6 +39,61 @@
     img {
       width: 170px;
       height: 170px;
+    }
+  }
+
+  &address-section {
+    padding: 35px 0 35px 24px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .footer- {
+    &container {
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgba(52, 63, 82, 1);
+      padding: 100px 208px;
+      color: white;
+      flex-direction: unset;
+    }
+
+    &copyright {
+      text-align: center;
+      background-color: rgba(52, 63, 82, 1);
+      width: 100%;
+      color: white;
+    }
+
+    &socmed {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      cursor: pointer;
+      padding-left: unset;
+    }
+
+    &title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 35px;
+    }
+
+    &item {
+      font-size: 16px;
+    }
+
+    &image {
+      img {
+        width: 170px;
+        height: 170px;
+      }
+    }
+
+    &address-section {
+      padding: unset;
     }
   }
 }

@@ -3,18 +3,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 40px;
   background-color: var(--color-grey);
   padding: 100px 208px;
 
   img.iso {
-    height: 180px;
-    width: 180px;
+    height: 90px;
+    width: 90px;
   }
 
   img.catalog,
   img.tkdn {
-    width: 180px;
-    height: 120px;
+    width: 100px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .goverment-container {
+    gap: 80px;
+    img.iso {
+      height: 180px;
+      width: 180px;
+    }
+
+    img.catalog,
+    img.tkdn {
+      width: 180px;
+      height: 120px;
+    }
   }
 }

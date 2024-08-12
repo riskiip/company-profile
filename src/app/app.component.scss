@@ -1,15 +1,22 @@
 .img-test {
-  position: absolute;
-  top: 0;
+  display: none;
 }
 
 .navbar-section {
   position: relative;
 }
 
-.home-section,
-.product-section,
-.partners-section,
-.contact-section {
-  margin: 0 208px;
+@media screen and (min-width: 576px) {
+  .img-test {
+    display: unset;
+    position: absolute;
+    top: 0;
+  }
+
+  .home-section,
+  .product-section,
+  .partners-section,
+  .contact-section {
+    margin: 0 208px;
+  }
 }

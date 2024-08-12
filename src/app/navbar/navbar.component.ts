@@ -10,6 +10,8 @@ import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 })
 export class NavbarComponent {
   navbarfixed: boolean = false;
+  menuClicked = false;
+
   @Output() navEmitter = new EventEmitter();
 
   @HostListener('window:scroll', ['$event']) onscroll() {
@@ -24,5 +26,9 @@ export class NavbarComponent {
 
   onNavClicked(anchor: string) {
     this.navEmitter.emit(anchor);
+  }
+
+  onMenuClicked() {
+    this.menuClicked = !this.menuClicked;
   }
 }

@@ -1,4 +1,7 @@
-<div [ngClass]="navbarfixed ? 'nav-container-fixed' : 'nav-container'" class="">
+<div
+  [ngClass]="navbarfixed ? 'nav-container-fixed' : 'nav-container'"
+  class="web-view"
+>
   <div class="nav-logo">
     <img src="../../assets/logo/edutop.png" alt="edutop-navbar" />
   </div>
@@ -10,4 +13,26 @@
     <div class="nav-item" (click)="onNavClicked('partner')">Partner</div>
     <div class="nav-item" (click)="onNavClicked('contact')">Contact Us</div>
   </div>
+</div>
+
+<div class="mobile-view">
+  <div class="mobile-nav-container">
+    <div class="nav-logo-mobile">
+      <img src="../../assets/logo/edutop.png" alt="edutop-navbar" />
+    </div>
+
+    <div class="more-vert-icon">
+      <img (click)="onMenuClicked()" src="../../assets/menu.svg" alt="menu" />
+    </div>
+  </div>
+
+  <ng-container *ngIf="menuClicked">
+    <div class="mobile-menu-container">
+      <div class="menu-item" (click)="onNavClicked('home')">Home</div>
+      <div class="menu-item" (click)="onNavClicked('product')">Product</div>
+      <div class="menu-item" (click)="onNavClicked('about')">About</div>
+      <div class="menu-item" (click)="onNavClicked('partner')">Partner</div>
+      <div class="menu-item" (click)="onNavClicked('contact')">Contact Us</div>
+    </div>
+  </ng-container>
 </div>
