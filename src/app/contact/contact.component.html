@@ -10,25 +10,48 @@
   </div>
 
   <div class="contact-email-section">
-    <form class="form-email">
+    <form
+      class="form-email"
+      action="https://formsubmit.co/51c6e06eaa873b0567b9b25ca533cbb0"
+      method="POST"
+    >
       <div class="email-row">
-        <input type="text" class="name" placeholder="Enter your name" />
-        <input type="email" class="email" placeholder="Enter your email" />
+        <input
+          type="text"
+          class="name"
+          name="Name"
+          placeholder="Enter your name"
+        />
+        <input
+          type="email"
+          class="email"
+          name="Email"
+          placeholder="Enter your email"
+        />
       </div>
 
       <div class="email-row">
-        <input type="text" class="company" placeholder="Company (Optional)" />
+        <input
+          type="text"
+          class="company"
+          name="Company"
+          placeholder="Company (Optional)"
+        />
         <input
           type="text"
           class="phone"
+          name="Phone"
           placeholder="Enter your phone number"
         />
       </div>
 
-      <input type="text" class="subject" placeholder="Subject" />
-      <textarea class="message" placeholder="Write your message"></textarea>
+      <input type="text" class="subject" name="Subject" placeholder="Subject" />
+      <textarea
+        class="message"
+        name="Value"
+        placeholder="Write your message"
+      ></textarea>
+      <button class="contact-button" type="submit">Send!</button>
     </form>
-
-    <div class="contact-button">Send!</div>
   </div>
 </div>
