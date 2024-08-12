@@ -52,6 +52,7 @@
   .about- {
     &container {
       display: flex;
+      flex-direction: unset;
       justify-content: space-between;
       margin: 100px 208px 0 208px;
       gap: 60px;
@@ -88,6 +89,7 @@
   .vision-mission-container {
     display: flex;
     justify-content: space-between;
+    flex-direction: unset;
     gap: 60px;
     margin-top: 60px;
     background-color: var(--color-grey);

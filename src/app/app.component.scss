@@ -6,6 +6,17 @@
   position: relative;
 }
 
+img.chevron-icon {
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 24px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 576px) {
   .img-test {
     display: unset;

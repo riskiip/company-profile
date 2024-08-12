@@ -13,14 +13,15 @@ export class NavbarComponent {
   menuClicked = false;
 
   @Output() navEmitter = new EventEmitter();
+  @Output() arrowEmitter = new EventEmitter();
 
   @HostListener('window:scroll', ['$event']) onscroll() {
     if (window.scrollY > 100) {
-      console.log('sticky navbar');
       this.navbarfixed = true;
+      this.arrowEmitter.emit(true);
     } else {
-      console.log('nope');
       this.navbarfixed = false;
+      this.arrowEmitter.emit(false);
     }
   }
 

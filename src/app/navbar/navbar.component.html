@@ -15,7 +15,10 @@
   </div>
 </div>
 
-<div class="mobile-view">
+<div
+  class="mobile-view"
+  [ngClass]="navbarfixed ? 'nav-container-fixed' : 'nav-container'"
+>
   <div class="mobile-nav-container">
     <div class="nav-logo-mobile">
       <img src="../../assets/logo/edutop.png" alt="edutop-navbar" />
