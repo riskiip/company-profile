@@ -13,12 +13,12 @@
     "
   >
     <h1 class="title">{{ title }}</h1>
-    <div *ngFor="let image of body" class="image-container">
-      <img [src]="image" alt="" />
+    <div class="image-container">
+      <div *ngFor="let image of body" class="image-container">
+        <img [src]="image" alt="" class="image-partner" />
+      </div>
     </div>
 
-    <div class="btn-container">
-      <button (click)="closeMe()">close</button>
-    </div>
+    <div class="btn-container" (click)="closeMe()">Close</div>
   </div>
 </div>

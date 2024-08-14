@@ -15,7 +15,21 @@
 
 .btn-container {
   display: flex;
-}
-button {
+  background-color: var(--color-accent);
+  border-radius: 20px;
+  border: 0;
+  padding: 10px;
+  color: white;
   margin: 5px;
+}
+
+.image-partner {
+  width: 60px;
+  height: 60px;
+}
+
+.image-container {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
 }
