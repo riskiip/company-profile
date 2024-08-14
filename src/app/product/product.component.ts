@@ -1,14 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss',
 })
 export class ProductComponent {
+  constructor(private router: Router) {}
+
   productThumbnails = [
     {
       src: '../../assets/product/electrical-engineering.jpg',
@@ -43,4 +46,8 @@ export class ProductComponent {
       alt: 'paud',
     },
   ];
+
+  navigateAllProduct() {
+    this.router.navigate(['/products']);
+  }
 }

@@ -1,0 +1,21 @@
+<div class="summary-container container">
+  <div class="summary-title">
+    <div class="summary-arrow">
+      <a routerLink="/home"><img src="../../assets/back-arrow.svg" alt="" /></a>
+    </div>
+    <div class="summary-title-text">All Products</div>
+  </div>
+
+  <div class="summary-content">
+    <div *ngFor="let item of products; let i = index" class="summary-divider">
+      <div class="summary-content-title">
+        {{ item.category }}
+      </div>
+      <div class="summary-image-wrapper">
+        <div class="summary-content-image" *ngFor="let pic of item.images">
+          <img [src]="pic" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
