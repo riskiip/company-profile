@@ -18,6 +18,10 @@ export class ProductComponent {
       alt: 'electrical-engineering',
     },
     {
+      src: '../../assets/product/industrial-module.jpg',
+      alt: 'industrial',
+    },
+    {
       src: '../../assets/product/mechatronic.jpg',
       alt: 'mechatronic',
     },
@@ -26,24 +30,21 @@ export class ProductComponent {
       alt: 'oil-pumping-module',
     },
     {
-      src: '../../assets/product/acer-tkdn.jpg',
-      alt: 'laptop-acer',
+      src: '../../assets/product/water-supply.jpg',
+      alt: 'water-supply',
     },
     {
-      src: '../../assets/product/zyrex-tkdn.jpeg',
-      alt: 'laptop-zyrex',
+      src: '../../assets/product/ev-training-set.jpg',
+      alt: 'ev',
     },
     {
       src: '../../assets/product/smartboard.jpeg',
       alt: 'smartboard',
     },
+
     {
-      src: '../../assets/product/meja-paud.jpg',
-      alt: 'meja-paud',
-    },
-    {
-      src: '../../assets/product/paud1.jpg',
-      alt: 'paud',
+      src: '../../assets/product/zyrex-tkdn.jpeg',
+      alt: 'zyrex',
     },
   ];
 
