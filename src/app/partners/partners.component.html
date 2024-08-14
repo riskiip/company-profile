@@ -3,15 +3,51 @@
 
   <div class="description-template">Discover Our Previous Project</div>
 
-  <img src="../../assets/pinmap.svg" class="pin gorontalo" alt="" />
-  <img src="../../assets/pinmap.svg" class="pin jakarta" alt="" />
-  <img src="../../assets/pinmap.svg" class="pin malang" alt="" />
-  <img src="../../assets/pinmap.svg" class="pin kaltim" alt="" />
-  <img src="../../assets/pinmap.svg" class="pin makasar" alt="" />
-  <img src="../../assets/pinmap.svg" class="pin manado" alt="" />
-  <img src="../../assets/pinmap.svg" class="pin palembang" alt="" />
+  <img
+    src="../../assets/pinmap.svg"
+    class="pin gorontalo"
+    alt=""
+    (click)="openPin('manado')"
+  />
+  <img
+    src="../../assets/pinmap.svg"
+    class="pin jakarta"
+    alt=""
+    (click)="openPin('jakarta')"
+  />
+  <img
+    src="../../assets/pinmap.svg"
+    class="pin malang"
+    alt=""
+    (click)="openPin('malang')"
+  />
+  <img
+    src="../../assets/pinmap.svg"
+    class="pin kaltim"
+    alt=""
+    (click)="openPin('kaltim')"
+  />
+  <img
+    src="../../assets/pinmap.svg"
+    class="pin makasar"
+    alt=""
+    (click)="openPin('makasar')"
+  />
+  <img
+    src="../../assets/pinmap.svg"
+    class="pin manado"
+    alt=""
+    (click)="openPin('gorontalo')"
+  />
+  <img
+    src="../../assets/pinmap.svg"
+    class="pin palembang"
+    alt=""
+    (click)="openPin('palembang')"
+  />
 
   <div class="partner-map-section">
     <img src="../../assets/indonesia.png" alt="" />
   </div>
 </div>
+<div #modal></div>
