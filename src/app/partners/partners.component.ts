@@ -34,7 +34,7 @@ export class PartnersComponent implements OnDestroy {
         ];
         break;
       case 'palembang':
-        this.cityName = 'Palembang';
+        this.cityName = 'Sumatra Selatan';
         this.cityImage = ['https://i.ibb.co.com/z79wrN7/lahat.png'];
         break;
       case 'gorontalo':
@@ -45,11 +45,11 @@ export class PartnersComponent implements OnDestroy {
         ];
         break;
       case 'makasar':
-        this.cityName = 'Makasar';
+        this.cityName = 'Sulawesi Selatan';
         this.cityImage = ['https://i.ibb.co.com/LkQxRLz/ith.jpg'];
         break;
       case 'manado':
-        this.cityName = 'Manado';
+        this.cityName = 'Sulawesi Utara';
         this.cityImage = ['https://i.ibb.co.com/J3xZMrt/unm.png'];
         break;
       case 'kaltim':
@@ -60,11 +60,11 @@ export class PartnersComponent implements OnDestroy {
         ];
         break;
       case 'malang':
-        (this.cityName = 'Malang'),
-          (this.cityImage = [
-            'https://i.ibb.co.com/8Pp18Hd/polinema.png',
-            'https://i.ibb.co.com/Qff7T28/kotasura.png',
-          ]);
+        this.cityName = 'Jawa Timur';
+        this.cityImage = [
+          'https://i.ibb.co.com/8Pp18Hd/polinema.png',
+          'https://i.ibb.co.com/Qff7T28/kotasura.png',
+        ];
         break;
       default:
         break;

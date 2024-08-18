@@ -89,7 +89,7 @@
   .vision-mission-container {
     display: flex;
     justify-content: space-between;
-    flex-direction: unset;
+    flex-direction: column;
     gap: 60px;
     margin-top: 60px;
     background-color: var(--color-grey);

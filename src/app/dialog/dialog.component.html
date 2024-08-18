@@ -1,21 +1,11 @@
 <div class="modal-container">
-  <div
-    style="
-      width: 500px;
-      height: auto;
-      border: olive 1px solid;
-      background-color: white;
-      border-radius: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    "
-  >
+  <div class="dialog-wrapper">
     <h1 class="title">{{ title }}</h1>
-    <div class="image-container">
-      <div *ngFor="let image of body" class="image-container">
-        <img [src]="image" alt="" class="image-partner" />
+    <div style="display: flex">
+      <div class="image-container">
+        <div *ngFor="let image of body" class="image-container">
+          <img [src]="image" alt="" class="image-partner" />
+        </div>
       </div>
     </div>
 
