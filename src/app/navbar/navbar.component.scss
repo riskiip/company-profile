@@ -1,3 +1,17 @@
+.nav-logo {
+  display: flex;
+  gap: 60px;
+}
+
+.abadi-navbar,
+.edutop-navbar {
+  transform: scale(1.3);
+}
+
+.abadi-navbar {
+  mix-blend-mode: multiply;
+}
+
 .web-view {
   display: none !important;
 }

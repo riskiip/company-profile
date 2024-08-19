@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -10,6 +10,8 @@ import { RouterModule } from '@angular/router';
   styleUrl: './all-product.component.scss',
 })
 export class AllProductComponent {
+  showArrow = false;
+
   products = [
     {
       category: 'University',
@@ -73,4 +75,16 @@ export class AllProductComponent {
       ],
     },
   ];
+
+  @HostListener('window:scroll', ['$event']) onscroll() {
+    if (window.scrollY > 100) {
+      this.showArrow = true;
+    } else {
+      this.showArrow = false;
+    }
+  }
+
+  onArrowClick() {
+    window.scroll(0, 0);
+  }
 }

@@ -3,13 +3,22 @@
   class="web-view"
 >
   <div class="nav-logo">
-    <img src="../../assets/logo/edutop.png" alt="edutop-navbar" />
+    <img
+      src="../../assets/logo/edutop.png"
+      class="edutop-navbar"
+      alt="edutop-navbar"
+    />
+    <img
+      src="../../assets/logo/abadi-clear.png"
+      class="abadi-navbar"
+      alt="edutop-navbar"
+    />
   </div>
 
   <div [ngClass]="navbarfixed ? 'nav-grid-item-fixed' : 'nav-grid-item'">
     <div class="nav-item" (click)="onNavClicked('home')">Home</div>
-    <div class="nav-item" (click)="onNavClicked('product')">Product</div>
     <div class="nav-item" (click)="onNavClicked('about')">About</div>
+    <div class="nav-item" (click)="onNavClicked('product')">Product</div>
     <div class="nav-item" (click)="onNavClicked('partner')">Partner</div>
     <div class="nav-item" (click)="onNavClicked('contact')">Contact Us</div>
   </div>
@@ -32,8 +41,8 @@
   <ng-container *ngIf="menuClicked">
     <div class="mobile-menu-container">
       <div class="menu-item" (click)="onNavClicked('home')">Home</div>
-      <div class="menu-item" (click)="onNavClicked('product')">Product</div>
       <div class="menu-item" (click)="onNavClicked('about')">About</div>
+      <div class="menu-item" (click)="onNavClicked('product')">Product</div>
       <div class="menu-item" (click)="onNavClicked('partner')">Partner</div>
       <div class="menu-item" (click)="onNavClicked('contact')">Contact Us</div>
     </div>
