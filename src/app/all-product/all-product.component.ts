@@ -31,7 +31,7 @@ export class AllProductComponent {
       ],
     },
     {
-      category: 'Furniture PAUD',
+      category: 'PAUD',
       images: [
         '../../assets/product/meja-paud.jpg',
         '../../assets/product/kursi-paud.jpg',

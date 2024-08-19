@@ -4,7 +4,7 @@
   <div class="description-template">All Essentials You Need</div>
 
   <div class="product-images">
-    <div *ngFor="let item of productThumbnails">
+    <div *ngFor="let item of productThumbnails" class="image-product">
       <img [src]="item.src" [alt]="item.alt" />
     </div>
   </div>
