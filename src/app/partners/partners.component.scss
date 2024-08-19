@@ -42,6 +42,8 @@
 
 .partner- {
   &container {
+    background-color: var(--color-grey);
+    padding: 36px;
     display: flex;
     flex-direction: column;
     align-items: center;

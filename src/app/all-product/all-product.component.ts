@@ -31,12 +31,21 @@ export class AllProductComponent {
       ],
     },
     {
+      category: 'Sport',
+      images: [
+        '../../assets/product/baseball.jpg',
+        '../../assets/product/net bola.jpg',
+        '../../assets/product/pickleball.jpg',
+        '../../assets/product/arrow.png',
+      ],
+    },
+    {
       category: 'PAUD',
       images: [
         '../../assets/product/meja-paud.jpg',
         '../../assets/product/kursi-paud.jpg',
         '../../assets/product/kursi-paud2.jpg',
-        '../../assets/product/paud1.jpg',
+        '../../assets/product/paud.png',
         '../../assets/product/paud2.jpg',
       ],
     },
