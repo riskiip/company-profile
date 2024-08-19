@@ -42,6 +42,8 @@ img.tkdn {
     gap: 12px;
     cursor: pointer;
     padding-left: 24px;
+    z-index: 999;
+    position: relative;
   }
 
   &href {
